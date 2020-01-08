@@ -1,0 +1,26 @@
+<?php
+namespace app\index\controller;
+use app\common\model\Think as SmallThink;
+
+Class Think
+{
+    public function index()
+    {
+        // return 'hello think';
+        //Get all the data of the table
+        // $think = Db::name('data')->select();
+        // var_dump($think[0]['NAME']);
+        $hatred = new SmallThink;
+        dump($hatred);
+    }
+}
+
+<?php
+//namespace specify the location of the file
+namespace app\common\model;
+use think\Model;
+//Think table
+Class Think extends Model
+{
+
+}
